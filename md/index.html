@@ -31,14 +31,26 @@
     <!-- main content -->
     <div class="container" role="main">
         <div class="jumbotron">
-            <h1>Happy Mother's Day</h1>
-            <p>Select the dates and click 'send'.</p>
+            <h1>Dearest Mother...</h1>
+            <p>If you are reading this, that means that you wish to turn in one
+            of the 'Offspring Visitation Coupons' I delivered.  Simple enter the
+            requested dates in the form below and hit send.  This will update
+            your offspring(me) of the epected arrival and departure dates. 
+            These coupons can be redeemed at anytime, for any length, although
+            the offspring wishes to keep it reasonable.</p>
 
             <br/>
 
-            <div id="md-form">
-                <input type="text" class="form-control">
-            </div>
+            <form id="md-form">
+                <div class="input-group">
+                    <span class="input-group-addon">Arrival</span>
+                    <input id="arrival" type="text" class="form-control">
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon">Departure</span>
+                    <input id="departure" type="text" class="form-control">
+                </div>
+            </form>
         </div>
     </div>
 
