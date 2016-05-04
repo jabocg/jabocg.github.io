@@ -99,18 +99,18 @@
     <script type="text/javascript">
       function sendMsg() {
         // var ar = $("#arrival");
-        var ar = document.getElementById("arrival");
+        var ar = document.getElementById("arrival").value;
         console.log(ar);
         // var dep = $("#departure");
-        var dep = document.getElementById("departure");
+        var dep = document.getElementById("departure").value;
         console.log(dep);
         // var mes = $("#message");
-        var mes = document.getElementById("message");
+        var mes = document.getElementById("message").value;
         console.log(mes);
-        var body = "";
-        body.concat(ar.value);
-        body.concat(dep.value);
-        body.concat(mes.value);
+        var body = "message: ";
+        body.concat(ar);
+        body.concat(dep);
+        body.concat(mes);
         console.log(body);
       }
     </script>
