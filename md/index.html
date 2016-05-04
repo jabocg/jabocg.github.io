@@ -31,46 +31,46 @@
 
     <!-- main content -->
     <div class="container" role="main">
-        <div class="jumbotron">
-            <h1>Dearest Mother...</h1>
-            <p>
-                If you are reading this, that means that you wish to redeem one
-                of the 'Offspring Visitation Coupons' I have provided you with.
-                Simply enter the requested dates in the form below and hit send.
-                This will update your offspring(me) of the expected arrival and
-                departure dates.  These coupons can be redeemed at anytime, for
-                any length, although the offspring wishes for you to keep it
-                reasonable.
-            </p>
-            <p>
-                Although a QR code probably pointed you here, the send link may 
-                or may not work on mobile, so I suggest you save this URL for
-                use later on a PC.  Even then, without proper setup it still 
-                may not work.  If all else fails, feel free to deliver the
-                dates via email, text, or call.
-            </p>
-        </div>
+      <div class="jumbotron">
+        <h1>Dearest Mother...</h1>
+        <p>
+          If you are reading this, that means that you wish to redeem one
+          of the 'Offspring Visitation Coupons' I have provided you with.
+          Simply enter the requested dates in the form below and hit send.
+          This will update your offspring(me) of the expected arrival and
+          departure dates.  These coupons can be redeemed at anytime, for
+          any length, although the offspring wishes for you to keep it
+          reasonable.
+        </p>
+        <p>
+          Although a QR code probably pointed you here, the send link may 
+          or may not work on mobile, so I suggest you save this URL for
+          use later on a PC.  Even then, without proper setup it still 
+          may not work.  If all else fails, feel free to deliver the
+          dates via email, text, or call.
+        </p>
+      </div> <!-- jumbotron -->
 
-        <form action="MAILTO:jabocg@gmail.com" method="POST" enctype="text/plain">
-            <div class="row">
-                    <div class="col-lg-6">
-                        <div class="input-group">
-                            <span class="input-group-addon">Arrival</span>
-                            <input id="arrival" type="text" class="form-control datable">
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="input-group">
-                            <span class="input-group-addon">Departure</span>
-                            <input id="departure" type="text" class="form-control datable">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br/>
-            <input type="submit" value="Send" class="btn btn-danger">
-        </form>
-    </div>
+      <form action="MAILTO:jabocg@gmail.com" method="POST" enctype="text/plain">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="input-group">
+              <span class="input-group-addon danger">Arrival</span>
+              <input id="arrival" type="text" class="form-control datable">
+            </div> <!-- input-group -->
+          </div> <!-- col-log-6 -->
+
+          <div class="col-lg-6">
+            <div class="input-group">
+              <span class="input-group-addon danger">Departure</span>
+              <input id="departure" type="text" class="form-control datable">
+            </div> <!-- input-group -->
+          </div> <!-- col-lg-6 -->
+        </div> <!-- row -->
+        <br/>
+        <input type="submit" value="Send" class="btn btn-danger">
+      </form>
+    </div> <!-- container -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
