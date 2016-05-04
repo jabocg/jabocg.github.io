@@ -98,11 +98,14 @@
     <!-- button to send email the other way -->
     <script type="text/javascript">
       function sendMsg() {
-        var ar = $("#arrival");
+        // var ar = $("#arrival");
+        var ar = document.getElementById("arrival");
         console.log(ar);
-        var dep = $("#departure");
+        // var dep = $("#departure");
+        var dep = document.getElementById("departure");
         console.log(dep);
-        var mes = $("#message");
+        // var mes = $("#message");
+        var mes = document.getElementById("message");
         console.log(mes);
         var body = "";
         body.concat(ar.value);
