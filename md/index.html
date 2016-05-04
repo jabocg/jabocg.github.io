@@ -98,17 +98,16 @@
     <!-- button to send email the other way -->
     <script type="text/javascript">
       function sendMsg() {
-        var ar = $("#arrival").value;
-        // var ar = document.getElementById("arrival").value;
+        var ar = document.getElementById("arrival").value;
         console.log(ar);
-        // var dep = $("#departure");
         var dep = document.getElementById("departure").value;
         console.log(dep);
-        // var mes = $("#message");
         var mes = document.getElementById("message").value;
         console.log(mes);
-        var body = ar + " " + dep + " " + mes;
+        var body = "Arrival: " + arr + "\nDeparture: " + dep + "\nMessage: " + mes;
         console.log(body);
+        var subject = "Mother's Day Visitation Request";
+        window.open("mailto:jabocg@gmail.com?subject=" + subject + "?body=" + body);
       }
     </script>
   </body>
