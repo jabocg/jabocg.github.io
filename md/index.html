@@ -78,6 +78,7 @@
         <br/>
         <input type="submit" value="Send" class="btn btn-danger">
       </form>
+      <button id="sendbtn" type="button" class="btn btn-danger" onclick="sendMsg()">Send email</button>
     </div> <!-- container -->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -92,6 +93,23 @@
         $('.datable').datepicker({
             format: "yyyy-mm-dd"
         });
+    </script>
+
+    <!-- button to send email the other way -->
+    <script type="text/javascript">
+      function sendMsg() {
+        var ar = $(".arrival");
+        console.log(ar);
+        var dep = $(".departure");
+        console.log(dep);
+        var mes = $(".message");
+        console.log(mes);
+        var body = "";
+        body.concat(ar.value);
+        body.concat(dep.value);
+        body.concat(mes.value);
+        console.log(body);
+      }
     </script>
   </body>
 </html>
